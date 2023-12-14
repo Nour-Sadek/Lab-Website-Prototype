@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* CSS Variables */
+:root {
+  --YaleBlue: #1789fc;
+  --EnglishRed: #AF3E4D;
+  --HeaderMargin: 2rem auto;
+}
+/* NavBar */
+.topnavbar {
+  min-height: 6rem;
+  margin-top: 1rem;
+}
+.Logo-and-Button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+.withintopnavbar {
+  height: 6rem;
+  width: 90vw;
+  max-width: 1120px;
+  margin: auto;
+}
+.nav-btn {
+  padding: 0.1rem 0.1rem;
+  font-weight: bold;
+  background-color: var(--YaleBlue);
+  width: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.allnavlinks {
+  display: flex;
+  flex-direction: column;
+  height: 0; 
+  overflow: hidden;
+  transition: height 0.3s;
+  position: sticky;
+  background-color: aliceblue;
+  z-index: 100;
+}
+.show-links {
+  height: 330px;
+}
+.navlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: grey;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid grey;
+  transition-property: color, background-color;
+}
+.navlink:hover {
+  color: white;
+  background-color: slategray;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+/* End of NavBar */
+
+/* Research-Header */
+.Research-Header {
+  min-height: 30vh;
+  margin: var(--HeaderMargin);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.Inner-Research-Header {
+  margin: auto;
+}
+.Research-Header-1 {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.Research-Header-2 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: italic;
+}
+/* End of Research Header */
+
+/* Research Main */
+.Research-Body-Header-1 {
+  color: var(--YaleBlue);
+}
+.Research-Body-Header-2 {
+  color: var(--YaleBlue);
+  margin-top: 2rem;
+}
+.Research-Body-Header-3 {
+  color: var(--YaleBlue);
+  margin-top: 2rem;
+}
+.to-understand {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.to-understand > h4 {
+  color: var(--EnglishRed);
+  font-style: italic;
+  min-width: 30%;
+}
+.to-understand > ul {
+  margin-left: 2rem;
+}
+.to-determine {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.to-determine > h4 {
+  color: var(--EnglishRed);
+  font-style: italic;
+  min-width: 30%;
+}
+.to-determine > ul {
+  margin-left: 2rem;
+}
+.Research-Image-1 {
+  background: url(./Images/Research-Focus-1\ Picture.png);
+  min-width: 90vw;
+  min-height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1rem auto;
+}
+.Research-Image-2 {
+  background: url(./Images/Research-Focus-2\ Picture.png);
+  min-width: 90vw;
+  min-height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1rem auto;
+}
+.Research-Image-3 {
+  background: url(./Images/Research-Focus-3\ Picture.png);
+  min-width: 90vw;
+  min-height: 30vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 1rem auto;
+}
+.Research-Focus-3 > p {
+  margin-bottom: 6rem;
+}
+/* End of Research Main */
+
+/* @media Query */
+@media screen and (min-width:980px) {
+  /* NavBar */
+  .nav-btn {
+    display: none;
+  }
+  .topnavbar {
+    height: auto;
+    min-height: 4rem;
+  }
+  .withintopnavbar {
+    height: auto;
+    min-height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0;
+  }
+  .Logo-and-Button {
+    height: auto;
+  }
+  .allnavlinks {
+    height: auto;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+  }
+  .navlink {
+    border-top: 0;
+    padding: 0;
+  }
+  /* End of NavBar */
+
+  /* Research Header */
+  .Research-Header-1 {
+    font-size: 2.5rem;
+  }
+  .Research-Header-2 {
+    font-size: 3rem;
+  }
+  /* End of Research Header */
+
+  /* Research Main */
+  .Research-Image-1 {
+    min-width: 30vw;
+    min-height: 40vh;
+  }
+  .Research-Focus-1 {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+  }
+  .Research-Image-2 {
+    min-width: 60vw;
+    min-height: 30vh;
+  }
+  .Research-Focus-2 > p {
+    margin-top: 2rem;
+  }
+  .Research-Image-3 {
+    min-width: 30vw;
+    min-height: 30vh;
+  }
+  .Research-Focus-3 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+  }
+  .Research-Focus-3 > p {
+    margin-bottom: 0;
+    margin-left: 5%;
+  }
+  .to-understand > h4 {
+    margin-right: 4rem;
+    margin-left: 15%;
+  }
+  .to-determine > h4 {
+    margin-right: 4rem;
+    margin-left: 15%;
+  }
+  .to-determine {
+    margin-top: 2rem;
+  }
+  .Research-Body-Header-1 {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  .Research-Body-Header-2 {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+  .Research-Body-Header-3 {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  /* End of Research Main */
+}
+/* End of @media Query */
+
+/* Main Body */
+.MainBody {
+  width: 90vw;
+  max-width: 1120px;
+  margin: 0 auto;
+}

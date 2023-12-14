@@ -1,0 +1,455 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* CSS Variables */
+:root {
+  --YaleBlue: #1789fc;
+  --EnglishRed: #AF3E4D;
+  --HeaderMargin: 2rem auto;
+  --ImagesWandH: 15rem;
+}
+/* NavBar */
+.topnavbar {
+  min-height: 6rem;
+  margin-top: 1rem;
+}
+.Logo-and-Button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+.withintopnavbar {
+  height: 6rem;
+  width: 90vw;
+  max-width: 1120px;
+  margin: auto;
+}
+.nav-btn {
+  padding: 0.1rem 0.1rem;
+  font-weight: bold;
+  background-color: var(--YaleBlue);
+  width: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.allnavlinks {
+  display: flex;
+  flex-direction: column;
+  height: 0; 
+  overflow: hidden;
+  transition: height 0.3s;
+  position: sticky;
+  background-color: aliceblue;
+  z-index: 100;
+}
+.show-links {
+  height: 330px;
+}
+.navlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: grey;
+  font-size: 1rem;
+  display: block;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid grey;
+  transition-property: color, background-color;
+}
+.navlink:hover {
+  color: white;
+  background-color: slategray;
+}
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+/* End of NavBar */
+
+/* People-Header */
+.People-Header {
+  min-height: 30vh;
+  margin: var(--HeaderMargin);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+.Inner-People-Header {
+  margin: auto;
+}
+.People-Header-Text {
+  font-size: 2rem;
+  font-style: italic;
+}
+/* End of People Header */
+
+/* People Body */
+/* Principle Investigator */
+.Primary-Investigator-Image {
+  width: var(--ImagesWandH);
+  height: var(--ImagesWandH);
+  background: url(./Images/PI-Image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+.Primary-Investigator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.Primary-Investigator > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 2rem auto;
+}
+.Primary-Investigator-Header {
+  color: var(--YaleBlue);
+}
+/* Lab Members */
+.Lab-Members-Header {
+  color: var(--YaleBlue);
+  margin-top: 2rem;
+}
+.Position {
+  color: var(--EnglishRed);
+}
+/* Lab Member 1 */
+.Lab-Member-1-Image {
+  width: var(--ImagesWandH);
+  height: var(--ImagesWandH);
+  background: url(./Images/Placeholder-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+.Lab-Member-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.Lab-Member-1 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 2rem auto;
+}
+/* Lab Member 2 */
+.Lab-Member-2-Image {
+  width: var(--ImagesWandH);
+  height: var(--ImagesWandH);
+  background: url(./Images/Placeholder-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+.Lab-Member-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.Lab-Member-2 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 2rem auto;
+}
+/* Lab Member 3 */
+.Lab-Member-3-Image {
+  width: var(--ImagesWandH);
+  height: var(--ImagesWandH);
+  background: url(./Images/Placeholder-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+.Lab-Member-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.Lab-Member-3 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 2rem auto;
+}
+/* Lab Member 4 */
+.Lab-Member-4-Image {
+  width: var(--ImagesWandH);
+  height: var(--ImagesWandH);
+  background: url(./Images/Placeholder-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+.Lab-Member-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.Lab-Member-4 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 2rem auto;
+}
+/* Lab Member 5 */
+.Lab-Member-5-Image {
+  width: var(--ImagesWandH);
+  height: var(--ImagesWandH);
+  background: url(./Images/Placeholder-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+.Lab-Member-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.Lab-Member-5 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 2rem auto;
+}
+/* Lab Member 6 */
+.Lab-Member-6-Image {
+  width: var(--ImagesWandH);
+  height: var(--ImagesWandH);
+  background: url(./Images/Placeholder-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+}
+.Lab-Member-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.Lab-Member-6 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 2rem auto;
+}
+/* End of People Body */
+
+.MainBody {
+  width: 90vw;
+  max-width: 1120px;
+  margin: 0 auto;
+  margin-bottom: 7rem;
+}
+
+/* @media Query for min-width:768px */
+@media screen and (min-width:768px) {
+  /* Lab Member 1 */
+  .Lab-Member-1 {
+    float: left;
+    width: 50%;
+  }
+  .Lab-Member-1 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+  /* Lab Member 2 */
+  .Lab-Member-2 {
+    float: left;
+    width: 50%;
+  }
+  .Lab-Member-2 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+  /* Lab Member 3 */
+  .Lab-Member-3 {
+    float: left;
+    width: 50%;
+  }
+  .Lab-Member-3 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+  /* Lab Member 4 */
+  .Lab-Member-4 {
+    float: left;
+    width: 50%;
+    margin-bottom: 5rem;
+  }
+  .Lab-Member-4 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+  /* Lab Member 5 */
+  .Lab-Member-5 {
+    float: left;
+    width: 50%;
+    margin-bottom: 5rem;
+  }
+  .Lab-Member-5 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+  /* Lab Member 6 */
+  .Lab-Member-6 {
+    float: left;
+    width: 50%;
+    margin-bottom: 5rem;
+  }
+  .Lab-Member-6 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+}
+/* @media Query for min-width:980px */
+@media screen and (min-width:980px) {
+  /* NavBar */
+  .nav-btn {
+    display: none;
+  }
+  .topnavbar {
+    height: auto;
+    min-height: 4rem;
+  }
+  .withintopnavbar {
+    height: auto;
+    min-height: 4rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0;
+  }
+  .Logo-and-Button {
+    height: auto;
+  }
+  .allnavlinks {
+    height: auto;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+  }
+  .navlink {
+    border-top: 0;
+    padding: 0;
+  }
+  /* End of NavBar */
+  .People-Header-Text {
+    font-size: 4rem;
+  }
+  /* Primary Investigator */
+  .Primary-Investigator {
+    flex-direction: row;
+  }
+  .Primary-Investigator > p {
+    max-width: fit-content;
+  }
+  /* Lab Member 1 */
+  .Lab-Member-1 {
+    float: left;
+    width: 33%;
+  }
+  .Lab-Member-1 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+  /* Lab Member 2 */
+  .Lab-Member-2 {
+    float: left;
+    width: 33%;
+  }
+  .Lab-Member-2 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+  /* Lab Member 3 */
+  .Lab-Member-3 {
+    float: left;
+    width: 33%;
+  }
+  .Lab-Member-3 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+  /* Lab Member 4 */
+  .Lab-Member-4 {
+    float: left;
+    width: 33%;
+    margin-bottom: 5rem;
+  }
+  .Lab-Member-4 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+  /* Lab Member 5 */
+  .Lab-Member-5 {
+    float: left;
+    width: 33%;
+    margin-bottom: 5rem;
+  }
+  .Lab-Member-5 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+  /* Lab Member 6 */
+  .Lab-Member-6 {
+    float: left;
+    width: 33%;
+    margin-bottom: 5rem;
+  }
+  .Lab-Member-6 > p {
+    max-width: var(--ImagesWandH);
+    text-align: center;
+  }
+}
+/* End of @media Query */
